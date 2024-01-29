@@ -1,0 +1,11 @@
+@import "styles/utils/variables";
+
+.Events__create {
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 10px;
+    color: $c-blue;
+    font-weight: 500;
+  }
+}

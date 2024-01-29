@@ -1,0 +1,25 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.VerificationBar {
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.VerificationBar__verified {
+  color: $c-green;
+  background: rgba(52, 199, 89, 0.15);
+}
+
+.VerificationBar__not {
+  color: $c-red;
+  background: rgba(234, 16, 0, 0.15);
+}
+
+.VerificationBar__pending {
+  background: rgba(255, 149, 0, 0.15);
+  color: $c-orange;
+}

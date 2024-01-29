@@ -1,0 +1,27 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.ApartmentHouseInfo {
+  @include FlexStyles(flex-start, space-between);
+  .ApartmentHouseInfo__left {
+    padding: 30px;
+    .ApartmentHouseInfo__item {
+      margin-bottom: 25px;
+    }
+    .ApartmentHouseInfo__info {
+      color: $c-black-900;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+  .ApartmentHouseInfo__right {
+    max-width: 370px;
+  }
+  .ApartmentHouseInfo__empty {
+    padding: 30px;
+  }
+}
+
+.OrganizationChangesList {
+  margin-top: 15px;
+}

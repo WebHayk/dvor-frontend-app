@@ -1,0 +1,47 @@
+@import "styles/utils/variables";
+
+.OrganizationRow__row {
+  display: flex;
+  align-items: center;
+  .OrganizationRow__logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .OrganizationRow__right {
+    margin-left: 15px;
+    .OrganizationRow__top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .OrganizationRow__name {
+        color: $c-black-900;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: 5px;
+      }
+    }
+    .OrganizationRow__address {
+      color: $c-black-400;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .OrganizationRow__rating {
+    color: $c-black-900;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 10px 0 10px;
+  }
+  .OrganizationRow__reviews {
+    font-size: 13px;
+    color: $c-black-600;
+    font-weight: 500;
+  }
+}
+
+.OrganizationRow {
+  cursor: pointer;
+  height: 80px!important;
+}

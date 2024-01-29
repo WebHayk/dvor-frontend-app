@@ -1,0 +1,16 @@
+.UserProfileBar {
+  display: flex;
+  align-items: center;
+  .UserProfileBar__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .UserProfileBar__verified {
+    margin-left: 5px;
+  }
+}
+
+.regular {
+  font-weight: 400!important;
+  font-size: 15px!important;
+}

@@ -1,0 +1,28 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.ApartmentUsers {
+  z-index: 10;
+  max-height: 50vh;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 110%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  top: 100%;
+
+
+    .ApartmentUsers__top {
+      @include FlexBetweenStyles;
+      padding: 18px;
+
+      .ApartmentUsers__title {
+        color: $c-black-900;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+}

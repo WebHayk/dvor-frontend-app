@@ -1,0 +1,79 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.TaskTop {
+  .TaskTop__alert {
+    margin-top: 30px;
+  }
+  .TaskTop__row {
+    display: flex;
+    align-items: center;
+    button {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .TaskTop__content {
+    @include FlexStyles(center, space-between);
+    .TaskTop__rating {
+      display: flex;
+      align-items: flex-start;
+      .TaskTop__label {
+        color: $c-black-600;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.TaskEstimateDialog {
+  width: 100%;
+  .TaskEstimateDialog__content {
+    padding: 20px;
+    border: 1px $c-grey-100 solid;
+    border-radius: 5px;
+    .TaskEstimateDialog__area {
+      margin-top: 15px;
+      padding: 0;
+      border: 0;
+      min-height: 120px;
+    }
+
+    .TaskEstimateDialog__rating {
+      display: flex;
+      align-items: center;
+
+      .TaskEstimateDialog__label {
+        margin-left: 10px;
+        font-weight: 500;
+        color: $c-black-900;
+      }
+
+      .TaskEstimateDialog__error {
+        color: $c-red;
+      }
+    }
+  }
+  .TaskEstimateDialog__bottom {
+    background: #f8f9ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    .TaskEstimateDialog__option {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 5px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.TaskEstimateDialog__file {
+  margin: 15px 0;
+}

@@ -1,0 +1,86 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.LoginDialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  z-index: 2001;
+  .LoginDialog__content {
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 390px;
+    width: 100%;
+    margin: 3rem auto;
+    .LoginDialog__top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .LoginDialog__preview {
+      text-align: center;
+      .LoginDialog__info {
+        margin-top: 30px;
+        .LoginDialog__title {
+          font-size: 24px;
+          line-height: 28px;
+          color: $c-black-900;
+        }
+        .LoginDialog__description {
+          color: rgba(0,0,0,0.75);
+          line-height: 18px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .LoginDialog__control {
+      margin-top: 30px;
+      .LoginDialog__password {
+        position: relative;
+        margin-top: 10px;
+      }
+      .LoginDialog__remind {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: $c-blue;
+        font-weight: 500;
+      }
+      .LoginDialog__submit {
+        @include FlexCenterStyles;
+        margin: 25px 0px;
+      }
+    }
+
+    .LoginDialog__registration {
+      @include FlexCenterStyles;
+      .LoginDialog__offer {
+        color: rgba(0,0,0,0.75);
+        margin-right: 10px;
+      }
+      .LoginDialog__register {
+        color: $c-blue;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.LoginDialog__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(36, 10, 37, 0.25);
+  z-index: 2000;
+}

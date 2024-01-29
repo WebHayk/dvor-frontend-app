@@ -1,0 +1,61 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.UserPanel {
+  border-radius: 10px;
+  margin: 0 10px;
+  user-select: none;
+  cursor: pointer;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  .UserPanel__content {
+    width: 100%;
+    @include FlexStyles(flex-start, space-between);
+    padding: 8px;
+    .UserPanel__left {
+      @include FlexStyles(flex-start, flex-start);
+      .UserPanel__info {
+        margin-left: 12px;
+        .UserPanel__description {
+          max-width: 170px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: $c-grey-500;
+          margin-top: 5px;
+          .UserPanel__draft {
+            color: $c-red;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .UserPanel__right {
+      @include FlexStyles(flex-end, center);
+      flex-direction: column;
+      .UserPanel__date {
+        color: $c-grey-500;
+        font-size: 12px;
+      }
+      .UserPanel__counter {
+        margin-top: 5px;
+      }
+      .UserPanel__top {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+  &:hover {
+    background: #F5F7F9;
+  }
+}
+
+.UserPanel__active {
+  background: #F5F7F9;
+}

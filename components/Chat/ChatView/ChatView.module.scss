@@ -1,0 +1,18 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.ChatView {
+  @include FlexStyles(center, space-between);
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: calc(90vh - 150px);
+  min-height: calc(90vh - 150px);
+  .ChatView__control {
+    background: #fff;
+    width: 100%;
+    padding: 3px 15px;
+    border-top: 1px $c-grey-100 solid;
+  }
+}

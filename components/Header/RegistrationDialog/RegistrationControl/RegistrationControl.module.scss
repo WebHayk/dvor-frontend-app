@@ -1,0 +1,52 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.RegistrationControl {
+  margin-top: 20px;
+  .RegistrationControl__gender {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    .RegistrationControl__label {
+      color: $c-black-500;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .RegistrationControl__row {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      .RegistrationControl__item {
+        padding: 2px 10px;
+        border-radius: 16px;
+        color: $c-black-600;
+        background: rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+        margin-right: 10px;
+      }
+      .RegistrationControl__active {
+        background: $c-blue!important;
+        color: #fff!important;
+      }
+    }
+  }
+  .RegistrationControl__password {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .RegistrationControl__submit {
+    margin-top: 15px;
+    .RegistrationControl__agreement {
+      display: flex;
+      align-items: flex-start;
+      .RegistrationControl__politics {
+        margin-left: 10px;
+        font-size: 12px;
+        color: rgba(0,0,0,0.75);
+      }
+    }
+    .RegistrationControl__submitButton {
+      margin-top: 20px;
+      @include FlexCenterStyles;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.IndicationRow {
+  width: 100%;
+  @include FlexStyles(flex-end, space-between);
+  margin-bottom: 20px;
+  .IndicationRow__left {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    .IndicationRow__field {
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
+  .IndicationRow__right {
+    display: flex;
+    align-items: center;
+    .IndicationRow__item {
+      margin-right: 30px;
+      .IndicationRow__label {
+        color: $c-black-500;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+      .IndicationRow__value {
+        color: $c-black-900;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

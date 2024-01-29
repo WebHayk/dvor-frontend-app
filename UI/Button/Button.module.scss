@@ -1,0 +1,38 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Button {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  height: 40px;
+  @include FlexCenterStyles;
+  font-size: 14px;
+  .Button__label {
+    margin-left: 10px;
+  }
+  &:disabled {
+    background: #c4c4c4 !important;
+  }
+}
+
+.Button__blue {
+  background: $c-blue;
+  color: #fff;
+  &:hover {
+    background: #1460DB;
+  }
+}
+
+.Button__white {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: #fff!important;
+  color: $c-black-600;
+}
+
+.Button__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px!important;
+  padding: 8px!important;
+}

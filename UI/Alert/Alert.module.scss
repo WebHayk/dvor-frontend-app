@@ -1,0 +1,45 @@
+@import "styles/utils/mixins";
+
+.Alert {
+  @include FlexStyles(flex-start, space-between);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  &:nth-child(even) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.error {
+  background: #FCE8DB;
+  color: #71192F!important;
+  box-shadow: 0 0 10px rgba(239, 102, 91, 0.3);
+}
+
+.warning {
+  background: #FEF7D1;
+  color: #755118!important;
+  box-shadow: 0 0 10px rgba(239, 189, 91, 0.3);
+}
+
+.info {
+  background: #D7F1FD;
+  color: #0C2A75!important;
+  box-shadow: 0 0 10px rgba(91, 159, 239, 0.3);
+}
+
+.success {
+  background: #EDFBD8;
+  color: #2B641E!important;
+  box-shadow: 0 0 10px rgba(132, 214, 90, 0.3);
+}

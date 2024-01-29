@@ -1,0 +1,28 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.PollsItem {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  .PollsItem__header {
+    .PollsItem__theme {
+      @include TitleStylesMixin;
+    }
+  }
+  .PollsItem__content {
+    color: rgba(0,0,0,0.75);
+    font-size: 15px;
+    line-height: 21px;
+    margin: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 60px;
+  }
+}

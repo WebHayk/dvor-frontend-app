@@ -1,0 +1,24 @@
+@import "styles/utils/variables";
+
+.CreateReviewDialog__row {
+  margin-bottom: 10px;
+  .CreateReviewDialog__label {
+    color: $c-black-500;
+    font-weight: 500;
+  }
+  .CreateReviewDialog__review {
+    min-height: 150px;
+    max-height: 150px;
+  }
+  .CreateReviewDialog__rating {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    .CreateReviewDialog__ratingLabel {
+      color: $c-black-900;
+      font-weight: 700;
+      font-size: 13px;
+      margin-left: 5px;
+    }
+  }
+}

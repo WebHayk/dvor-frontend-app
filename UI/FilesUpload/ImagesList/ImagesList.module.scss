@@ -1,0 +1,26 @@
+@import "styles/utils/mixins";
+
+.ImagesList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ImagesList__item {
+  position: relative;
+  margin-right: 15px;
+  .ImagesList__delete {
+    @include FlexCenterStyles;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+  }
+  .ImagesList__image {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "styles/utils/variables";
+
+.PublicService {
+  margin-top: 30px;
+  .PublicService__content {
+    display: flex;
+    align-items: flex-start;
+    .PublicService__right {
+      margin-left: 15px;
+      .PublicService__title {
+        max-width: 770px;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $c-black-900;
+      }
+      .PublicService__description {
+        color: $c-black-600;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      .PublicService__action {
+        margin-top: 15px;
+      }
+    }
+  }
+}

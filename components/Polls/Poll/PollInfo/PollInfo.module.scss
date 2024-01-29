@@ -1,0 +1,63 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.PollInfo {
+  width: 100%;
+  margin-right: 30px;
+  .PollInfo__header {
+    margin-bottom: 25px;
+    .PollInfo__process {
+      color: $c-black-600;
+      font-weight: 500;
+      .PollInfo__days {
+        color: $c-orange;
+        font-weight: 500;
+      }
+    }
+    .PollInfo__anonymous {
+      margin-top: 10px;
+    }
+    .PollInfo__theme {
+      @include TitleStylesMixin;
+      margin-top: 10px;
+    }
+  }
+  .PollInfo__content {
+    .PollInfo__date {
+      margin: 20px 0;
+    }
+    .PollInfo__section {
+      .PollInfo__label {
+        color: $c-black-900;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      .PollInfo__description {
+        font-size: 15px;
+        color: rgba(0,0,0,0.75);
+        line-height: 21px;
+      }
+    }
+    .PollInfo__vote {
+      margin-top: 20px;
+      color: $c-red;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    .PollInfo__owner {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      .PollInfo__profile {
+        margin-left: 10px;
+        .PollInfo__position {
+          font-size: 12px;
+          color: $c-black-500;
+          font-weight: 500;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

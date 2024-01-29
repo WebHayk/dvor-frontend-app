@@ -1,0 +1,84 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Review {
+  background: #FFFFFF;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.ReviewContent {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ReviewAnswer {
+  padding: 20px;
+  background: #EBF8FF;
+}
+
+.ReviewContent__top {
+  margin-bottom: 10px;
+  @include FlexBetweenStyles;
+  .ReviewContent__left {
+    display: flex;
+    align-items: center;
+    .ReviewContent__profile {
+      margin-left: 10px;
+      .ReviewContent__info {
+        display: flex;
+        align-items: center;
+      }
+      .ReviewContent__role {
+        color: $c-blue;
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: 4px;
+      }
+    }
+  }
+  .ReviewContent__right {
+    position: relative;
+  }
+}
+
+.ReviewContent__content {
+  .ReviewContent__rating {
+    display: flex;
+    align-items: center;
+    span {
+      color: $c-black-900;
+      margin-left: 5px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+  .ReviewContent__text {
+    margin-top: 10px;
+    line-height: 19px;
+    color: rgba(0,0,0,0.75);
+  }
+  .ReviewContent__images {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .ReviewContent__control {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    .ReviewContent__row {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.ReviewContent__label {
+  margin-left: 5px;
+  font-weight: 500;
+  color: $c-black-600;
+}

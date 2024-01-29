@@ -1,0 +1,40 @@
+@import "styles/utils/variables";
+
+.Sidebar__content {
+  height: 100%;
+  margin-top: 15px;
+
+  .Sidebar__link {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: $c-black-600;
+    height: 55px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+      margin-left: 12px;
+      white-space: nowrap !important;
+    }
+
+    &:hover {
+      background: #F5F7F9;
+    }
+  }
+
+  .Sidebar__control {
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+
+  .Rotate {
+    transform: rotate(180deg);
+  }
+
+  .Sidebar__hideContent {
+    display: none !important;
+  }
+}

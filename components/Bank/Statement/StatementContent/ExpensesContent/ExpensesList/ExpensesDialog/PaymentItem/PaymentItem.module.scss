@@ -1,0 +1,19 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.PaymentItem {
+  padding: 10px;
+  border-bottom: 1px rgba(0,0,0,0.1) solid;
+  @include FlexStyles(flex-start, space-between);
+  .PaymentItem__company {
+    color: $c-blue;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .PaymentItem__amount {
+    white-space: nowrap;
+    color: $c-red;
+    font-weight: 500;
+  }
+}

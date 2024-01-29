@@ -1,0 +1,14 @@
+.Breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .Breadcrumb {
+    text-decoration: none;
+    color: #747474;
+    font-size: 12px;
+  }
+  .Divider {
+    margin: 0px 5px;
+    transform: rotate(-90deg);
+  }
+}

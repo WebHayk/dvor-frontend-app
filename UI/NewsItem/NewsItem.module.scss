@@ -1,0 +1,38 @@
+@import "styles/utils/variables";
+
+.NewsItem {
+  cursor: pointer;
+  width: 100%;
+  max-width: 240px;
+  margin-right: 20px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  padding: 15px;
+  .NewsItem__date {
+    color: $c-black-600;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .NewsItem__title {
+    color: $c-black-900;
+    font-weight: 500;
+    margin: 4px 0;
+  }
+  .NewsItem__description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: $c-black-600;
+    font-size: 13px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; // Количество строк
+    line-height: 17px; // Для поддержки не-вебкит-браузеров, высота одной строки
+    max-height: 60px; // Для поддержки не-вебкит-браузеров, высота строки * количество строк
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

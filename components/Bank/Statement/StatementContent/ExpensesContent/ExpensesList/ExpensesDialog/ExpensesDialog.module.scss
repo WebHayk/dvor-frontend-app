@@ -1,0 +1,21 @@
+@import "styles/utils/variables";
+
+.ExpensesDialogHeader {
+  display: flex;
+  align-items: center;
+  .ExpensesDialogHeader__right {
+    margin-left: 10px;
+    .ExpensesDialogHeader__type {
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+    .ExpensesDialogHeader__description {
+      color: $c-black-600;
+      font-size: 14px;
+      span {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

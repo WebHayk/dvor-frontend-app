@@ -1,0 +1,20 @@
+@import "styles/utils/variables";
+
+.Tab {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 16px;
+  color: $c-black-600;
+  font-weight: 500;
+}
+
+.Tab__active {
+  color: #fff;
+  background: $c-blue;
+}
+
+.TabHeader {
+  display: inline-block;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.1);
+}

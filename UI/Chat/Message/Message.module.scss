@@ -1,0 +1,125 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.Message {
+  display: flex;
+  align-items: flex-start;
+  .Message__profile {
+    margin-right: 7px;
+  }
+  .Message__checker {
+    margin-right: 5px;
+  }
+}
+
+.Message__selected {
+  border-radius: 5px;
+  background: rgba(13, 133, 254, 0.1)!important;
+}
+
+.Message__info {
+  width: 100%;
+  max-width: 270px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  .Message__image {
+    object-fit: contain;
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+  }
+  .Message__replyIcon {
+    float: right;
+  }
+}
+
+.Message__owner {
+  color: $c-blue;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.Message__participant {
+  background: #F5F7F9;
+  .Message__top {
+    @include FlexStyles(center, space-between);
+  }
+  .Message__message {
+    color: $c-black-900;
+    line-height: 17px;
+  }
+  .Message__date {
+    @include FlexStyles(center, flex-end);
+    color: $c-black-500;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.Message__renderer {
+  margin-top: 5px;
+}
+
+.Message__local {
+  background: #BDD6FF;
+  border-color: #BDD6FF;
+  .Message__message {
+    color: $c-black-400;
+  }
+  .Message__date {
+    @include FlexStyles(center, flex-end);
+    color: $c-black-500;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+}
+
+.Message__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img {
+    margin-right: 3px;
+  }
+}
+
+.Message__renderer {
+  @include FlexStyles(center, flex-end);
+}
+
+.Message__container {
+  margin-bottom: 5px;
+}
+
+.Message__reply {
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  .Message__divider {
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 40px;
+    background: $c-blue;
+  }
+  .Message__replyImage {
+    border-radius: 3px;
+    margin-left: 10px;
+    object-fit: contain;
+  }
+  .Message__replyContent {
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  .Message__replyMessage {
+    color: $c-black-600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+  }
+}

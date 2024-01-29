@@ -1,0 +1,12 @@
+@import "styles/utils/mixins";
+
+.TasksList__top {
+  @include FlexBetweenStyles;
+  .TasksList__title {
+    @include TitleStylesMixin;
+  }
+  .TasksList__right {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,22 @@
+@import "styles/utils/variables";
+
+.ColumnBar {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  .ColumnBar__column {
+    .ColumnBar__label {
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .ColumnBar__value {
+      margin-bottom: 5px;
+      color: $c-black-900;
+      font-size: 15px
+    }
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "styles/utils/mixins";
+
+.TasksHeader {
+  position: relative;
+  margin-bottom: 20px;
+  .TasksHeader__content {
+    width: 100%;
+    @include FlexStyles(center, space-between);
+    .TasksHeader__left {
+      .TasksHeader__title {
+        @include TitleStylesMixin;
+      }
+    }
+    .TasksControl {
+      width: 100%;
+      @include FlexStyles(flex-end, flex-end);
+    }
+  }
+}

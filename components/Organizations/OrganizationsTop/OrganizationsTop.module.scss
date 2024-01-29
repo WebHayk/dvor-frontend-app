@@ -1,0 +1,28 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.OrganizationsTop {
+  padding-bottom: 30px;
+  border-bottom: 1px $c-grey-300 solid;
+  .OrganizationsTop__content {
+    @include FlexBetweenStyles;
+
+    .OrganizationsTop__left {
+      .OrganizationsTop__title {
+        @include TitleStylesMixin;
+      }
+    }
+
+    .OrganizationsTop__right {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .OrganizationsTop__type {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 20px;
+      }
+    }
+  }
+}

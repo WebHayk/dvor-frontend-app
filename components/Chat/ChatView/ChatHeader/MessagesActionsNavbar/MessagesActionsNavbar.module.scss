@@ -1,0 +1,15 @@
+@import "styles/utils/mixins";
+
+.MessagesActionsNavbar {
+  width: 100%;
+  @include FlexStyles(center, space-between);
+  .MessagesActionsNavbar__left {
+    display: flex;
+    align-items: center;
+    .MessagesActionsNavbar__cancel {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+}

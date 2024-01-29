@@ -1,0 +1,47 @@
+@import "styles/utils/mixins";
+
+.Carousel {
+  position: relative;
+  overflow: hidden;
+  .Carousel__inner {
+    white-space: nowrap;
+    transition: transform 0.5s;
+  }
+  .Carousel__prev {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.15);
+    @include FlexCenterStyles;
+    img {
+      transform: rotate(90deg);
+    }
+  }
+  .Carousel__next {
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    width: 32px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.15);
+    @include FlexCenterStyles;
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.CarouselItem {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+

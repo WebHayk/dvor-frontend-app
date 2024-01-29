@@ -1,0 +1,14 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.UserAuthorization {
+  height: 56px;
+  .UserAuthorization__authButton {
+    height: 100%;
+    background: $c-blue;
+    padding: 0 40px;
+    font-weight: 500;
+    color: #fff;
+    @include FlexCenterStyles;
+  }
+}

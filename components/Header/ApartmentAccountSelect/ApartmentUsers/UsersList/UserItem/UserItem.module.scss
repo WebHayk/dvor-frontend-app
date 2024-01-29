@@ -1,0 +1,29 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.UserItem {
+  position: relative;
+  @include FlexStyles(center, space-between);
+  padding: 18px 28px 18px 18px;
+  .UserItem__left {
+    display: flex;
+    align-items: center;
+    .UserItem__column {
+      margin-left: 10px;
+    }
+    .UserItem__address {
+      color: $c-black-900;
+      margin-bottom: 5px;
+    }
+  }
+  &:hover {
+    background: #F5F5F5;
+    user-select: none;
+  }
+}
+
+.UserItemDropdown {
+  position: absolute;
+  right: 28px;
+  z-index: 5;
+}

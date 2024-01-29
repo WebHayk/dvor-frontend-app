@@ -1,0 +1,24 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Application {
+  .Application__top {
+    @include FlexStyles(center, space-between);
+    margin-bottom: 10px;
+    .Application__title {
+      @include TitleStylesMixin;
+    }
+    .Application__cancel {
+      width: 40px;
+      height: 40px;
+      background: $c-red;
+      border-radius: 50%;
+      @include FlexStyles(center, center);
+    }
+  }
+  .Application__description {
+    color: rgba(0,0,0,0.75);
+    line-height: 21px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,8 @@
+@import "styles/utils/mixins";
+
+.MeterRecords {
+  @include SectionStylesMixin;
+  .MeterRecords__list {
+    margin-top: 30px;
+  }
+}

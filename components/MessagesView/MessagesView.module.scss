@@ -1,0 +1,12 @@
+@import "styles/utils/mixins";
+
+.MessagesView {
+  z-index: 999999;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  margin: 0 auto;
+  @include FlexStyles(center, center);
+  flex-direction: column;
+}

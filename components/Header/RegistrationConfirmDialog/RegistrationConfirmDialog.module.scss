@@ -1,0 +1,87 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.RegistrationConfirmDialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  z-index: 2001;
+  .RegistrationConfirmDialog__content {
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 390px;
+    width: 100%;
+    margin: 3rem auto;
+    .RegistrationConfirmDialog__top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 30px 30px 10px 30px;
+    }
+    .RegistrationConfirmDialog__bar {
+      .RegistrationConfirmDialog__title {
+        @include TitleStylesMixin;
+        margin-bottom: 25px;
+        padding: 0 30px;
+      }
+      position: relative;
+      text-align: center;
+      .RegistrationConfirmDialog__phone {
+        padding: 0 30px;
+        position: relative;
+        .RegistrationConfirmDialog__template {
+          position: absolute;
+          left: 50%;
+          top: 41%;
+          color: #838689;
+          transform: translate(-50%, -50%);
+          .RegistrationConfirmDialog__example {
+            font-size: 19px;
+            color: $c-blue;
+          }
+        }
+      }
+      .RegistrationConfirmDialog__control {
+        padding: 25px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #FFFFFF;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+        .RegistrationConfirmDialog__requirements {
+          color: rgba(0,0,0,0.75);
+          line-height: 18px;
+        }
+        .RegistrationConfirmDialog__wait {
+          font-size: 15px;
+          color: #838689;
+          margin-top: 20px;
+          .RegistrationConfirmDialog__counter {
+            color: $c-black-400;
+            font-weight: 600;
+          }
+        }
+        .RegistrationConfirmDialog__submit {
+          margin-top: 20px;
+          @include FlexCenterStyles;
+        }
+      }
+    }
+  }
+}
+
+.RegistrationConfirmDialog__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(36, 10, 37, 0.25);
+  z-index: 2000;
+}

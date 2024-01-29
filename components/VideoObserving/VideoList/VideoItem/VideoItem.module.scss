@@ -1,0 +1,37 @@
+@import "styles/utils/mixins";
+
+.VideoItem {
+  margin-right: 25px;
+  height: 100%;
+  max-width: 250px;
+  width: 100%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  .VideoItem__content {
+    .VideoItem__top {
+      cursor: pointer;
+    }
+    .VideoItem__video {
+      @include FlexCenterStyles;
+      border-radius: 5px 5px 0px 0px;
+      width: 100%;
+      background: #ccc;
+      .VideoItem__iframe {
+        height: 170px;
+        border: 0;
+      }
+    }
+    .VideoItem__bottom {
+      position: relative;
+      padding: 10px 15px;
+      width: 100%;
+      @include FlexBetweenStyles;
+    }
+    .VideoItem__dropdown {
+      position: absolute;
+      right: 0;
+      top: 90%;
+    }
+  }
+}

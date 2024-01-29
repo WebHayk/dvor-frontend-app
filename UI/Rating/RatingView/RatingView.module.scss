@@ -1,0 +1,20 @@
+@import "styles/utils/variables";
+
+.RatingView {
+  display: flex;
+  align-items: center;
+  .RatingView__left {
+    .RatingView__value {
+      font-weight: 300;
+      font-size: 54px;
+      color: $c-black-600;
+    }
+  }
+  .RatingView__right {
+    margin-left: 15px;
+    .RatingView__label {
+      color: $c-black-900;
+      margin-bottom: 5px;
+    }
+  }
+}

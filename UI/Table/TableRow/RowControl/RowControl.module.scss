@@ -1,0 +1,10 @@
+@import "styles/utils/mixins";
+
+.RowControl {
+ @include FlexStyles(center, flex-end);
+  button {
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+}

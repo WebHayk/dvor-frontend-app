@@ -1,0 +1,65 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Comment {
+  border-top: 1px $c-grey-100 solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 2px;
+
+  .Comment__profile {
+    width: 36px;
+    height: 36px;
+    background: #e2e2e2;
+    border-radius: 50%;
+  }
+
+  .Comment__right {
+    .Comment__top {
+      @include FlexBetweenStyles;
+
+      .Comment__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $c-black-900;
+      }
+
+      .Comment__date {
+        font-weight: 400;
+        line-height: 16px;
+        color: $c-black-500;
+      }
+    }
+
+    .Comment__content {
+      margin-top: 5px;
+
+      .Comment__text {
+        color: $c-black-900;
+      }
+    }
+
+    .Comment__bottom {
+      @include FlexBetweenStyles;
+      margin-top: 10px;
+
+      .Comment__reply {
+        cursor: pointer;
+        color: $c-blue;
+      }
+
+      .Comment__vote {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .Comment__count {
+          color: #8E8E93;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

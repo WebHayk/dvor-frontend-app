@@ -1,0 +1,10 @@
+@import "styles/utils/variables";
+
+.ChatPanel {
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+  border-right: 1px $c-grey-100 solid;
+  height: calc(90vh - 150px);
+  overflow-y: auto;
+}

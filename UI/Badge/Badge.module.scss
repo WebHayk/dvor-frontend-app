@@ -1,0 +1,15 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.Badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  @include FlexStyles(center, center);
+}
+
+.Badge__blue {
+  background: $c-blue!important;
+}

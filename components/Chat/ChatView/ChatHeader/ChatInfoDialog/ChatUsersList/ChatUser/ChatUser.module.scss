@@ -1,0 +1,28 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.ChatUser {
+  width: 100%;
+  padding: 8px 12px;
+  @include FlexStyles(center, space-between);
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    margin-left: 10px;
+  }
+  &:hover {
+    background: #F5F7F9;
+    border-radius: 10px;
+  }
+}
+
+.UserView__status {
+  font-size: 13px;
+  margin-top: 5px;
+  color: $c-black-600;
+  .UserView__online {
+    color: $c-green!important;
+  }
+}

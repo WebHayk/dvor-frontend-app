@@ -1,0 +1,17 @@
+.TasksContent__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #E6E6E6 solid;
+  margin-top: 20px;
+}
+
+.TasksContent__table {
+  margin-top: 10px;
+}
+
+.TasksPagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

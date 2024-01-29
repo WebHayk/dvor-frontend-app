@@ -1,0 +1,55 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.OrganizationInfoTop {
+  padding: 25px 15px;
+  display: flex;
+  align-items: flex-start;
+  .OrganizationInfoTop__left {
+    width: 20%;
+    .OrganizationInfoTop__profile {
+      object-fit: contain;
+    }
+  }
+  .OrganizationInfoTop__right {
+    width: 80%;
+    .OrganizationInfoTop__info {
+      display: flex;
+      align-items: center;
+      .OrganizationInfoTop__name {
+        color: #131210;
+        font-weight: 500;
+        font-size: 13px;
+        margin-left: 7px;
+      }
+    }
+    .OrganizationInfoTop__address {
+      color: #131210;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 7px;
+    }
+    .OrganizationInfoTop__bottom {
+      width: 100%;
+      @include FlexBetweenStyles;
+      .OrganizationInfoTop__rating {
+        display: flex;
+        align-items: center;
+        .OrganizationInfoTop__counter {
+          margin: 0 5px 0 5px;
+          font-weight: 500;
+          font-size: 13px;
+        }
+        .OrganizationInfoTop__reviews {
+          color: rgba(0, 0, 0, 0.6);
+          font-weight: 500;
+          font-size: 13px;
+        }
+      }
+      .OrganizationInfoTop__share {
+        margin-top: 4px;
+      }
+    }
+  }
+}

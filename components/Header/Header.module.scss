@@ -1,0 +1,22 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.Header {
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px $c-grey-100 solid;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .Header__left {
+    @include SizesMixin;
+    @include FlexStartStyles;
+  }
+  .Header__right {
+    @include SizesMixin;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

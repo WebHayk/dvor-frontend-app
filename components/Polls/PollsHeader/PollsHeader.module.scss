@@ -1,0 +1,21 @@
+@import "styles/utils/mixins";
+
+.PollsHeader {
+  position: relative;
+  @include FlexStyles(center, space-between);
+  margin-bottom: 20px;
+  .PollsHeader__title {
+    @include TitleStylesMixin;
+  }
+  .PollsControl {
+    @include FlexStyles(flex-end, flex-end);
+    width: 100%;
+  }
+  .PollsFilter {
+    margin: 0 20px;
+  }
+  .PollsSearch {
+    width: 100%;
+    max-width: 370px;
+  }
+}

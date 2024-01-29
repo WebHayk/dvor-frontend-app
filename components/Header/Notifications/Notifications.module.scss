@@ -1,0 +1,33 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Notifications {
+  z-index: 9999;
+  position: absolute;
+  box-shadow: 0 6px 90px rgba(0, 0, 0, 0.1);
+  top: 56px;
+  right: 0;
+  max-width: 385px;
+  width: 100%;
+  border-left: 1px $c-grey-100 solid;
+  .Notifications__top {
+    @include FlexBetweenStyles;
+    padding: 15px 20px;
+    background: $c-blue;
+    .Notifications__title {
+      font-weight: 500;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    .Notifications__closeButton {
+      @include FlexCenterStyles;
+      cursor: pointer;
+    }
+  }
+  .Notifications__content {
+    max-height: calc(100vh - 100px);
+    background: #fff;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}

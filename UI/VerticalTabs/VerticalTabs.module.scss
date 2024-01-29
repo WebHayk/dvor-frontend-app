@@ -1,0 +1,33 @@
+@import "styles/utils/variables";
+
+.VerticalTabs {
+  .VerticalTab {
+    cursor: pointer;
+    position: relative;
+    height: 56px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .VerticalTab__label {
+      margin-left: 5px;
+      color: $c-black-600;
+    }
+    .VerticalTab__activeLabel {
+      color: $c-black-900;
+      font-weight: 500;
+    }
+  }
+}
+
+.VerticalTab__active {
+  background-color: $c-grey-200!important;
+  &::after {
+    content: " ";
+    height: 56px;
+    position: absolute;
+    width: 3px;
+    background-color: $c-blue;
+    right: 0;
+  }
+}

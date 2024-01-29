@@ -1,0 +1,9 @@
+@import "styles/utils/variables";
+
+.News {
+  border-top: 1px $c-grey-100 solid;
+  margin-top: 30px;
+  .News__content {
+    display: flex;
+  }
+}

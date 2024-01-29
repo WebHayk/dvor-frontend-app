@@ -1,0 +1,29 @@
+@import "styles/utils/variables";
+
+.OwnerInfo {
+  margin: 20px 0;
+  .OwnerInfo__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $c-black-900;
+  }
+  .OwnerInfo__list {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    .OwnerInfo__column {
+      margin-right: 50px;
+      .OwnerInfo__label {
+        font-size: 15px;
+        color: $c-black-600;
+        margin-bottom: 3px;
+      }
+      .OwnerInfo__value {
+        color: $c-black-900;
+        margin-bottom: 3px;
+        font-size: 15px;
+      }
+    }
+  }
+}

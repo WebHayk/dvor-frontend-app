@@ -1,0 +1,19 @@
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+  .TableHead__cell {
+    color: #747474;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .TableBody__row {
+    height: 63px;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  }
+  .TableBody__hover {
+    cursor: pointer;
+    &:hover {
+      background-color: #F6F4F4;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "styles/utils/mixins";
+
+.VideoObserving {
+  @include SectionStylesMixin;
+  .VideoList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .VideoList__more {
+    width: 100%;
+    @include FlexStyles(center, center);
+  }
+}

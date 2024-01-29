@@ -1,0 +1,27 @@
+@import "styles/utils/mixins";
+
+.Poll {
+  @include SectionStylesMixin;
+  @include FlexStyles(flex-start, space-between);
+}
+
+.VotersList {
+  margin-top: 25px;
+  padding: 25px;
+  .VotersList__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.VotersTableRow__profile {
+  display: flex;
+  align-items: center;
+  .VotersTableRow__name {
+    margin-left: 10px;
+  }
+}
+
+.VotersTableRow__comment {
+  max-width: 200px;
+}

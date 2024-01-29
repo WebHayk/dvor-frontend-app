@@ -1,0 +1,35 @@
+@import "styles/utils/variables";
+
+.OrganizationBar {
+  min-width: 250px;
+  border-left: 1px #E6E6E6 solid;
+  height: 100%;
+  padding: 30px;
+  .OrganizationBar__content {
+    .OrganizationBar__imageWrapper {
+      width: 100%;
+      text-align: center;
+      .OrganizationBar__image {
+        max-width: 120px;
+        max-height: 150px;
+        object-fit: contain;
+        text-align: center;
+      }
+    }
+    .OrganizationBar__info {
+      margin-top: 30px;
+      .OrganizationBar__item {
+        margin-bottom: 17px;
+        .OrganizationBar__label {
+          color: $c-black-600;
+          margin-bottom: 5px;
+        }
+        .OrganizationBar__value {
+          font-size: 15px;
+          color: $c-black-900;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

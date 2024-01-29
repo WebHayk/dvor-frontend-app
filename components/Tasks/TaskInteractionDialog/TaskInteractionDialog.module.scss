@@ -1,0 +1,54 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.TaskInteractionDialog {
+  .TaskInteractionDialog__description {
+    margin: 15px 0 10px 0;
+    .TaskInteractionDialog__label {
+      font-weight: 500;
+      color: $c-black-600;
+      margin-bottom: 10px;
+    }
+    textarea {
+      min-height: 100px;
+    }
+  }
+  .TaskInteractionDialog__row {
+    @include FlexStyles(flex-start, space-between);
+    .TaskInteractionDialog__floor {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .TaskInteractionDialog__entrance {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+    .TaskInteractionDialog__field {
+      width: 100%;
+      select {
+        max-width: 100%;
+      }
+      &:last-child {
+        margin-left: 30px;
+      }
+    }
+  }
+  .TaskTags {
+    margin-top: 20px;
+    .TaskTags__title {
+      color: $c-black-500;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    .TaskTags__list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .TaskTags__chip {
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.ApartmentHouse {
+  background: #fff;
+}
+
+.ApartmentHouseTab {
+  display: flex;
+  align-items: center;
+  height: 53px;
+  padding-left: 30px;
+  background: #F0F0F0;
+  .ApartmentHouseTab__tab {
+    height: 53px;
+  }
+}

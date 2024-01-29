@@ -1,0 +1,54 @@
+@import "variables";
+
+*, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-size: $fs-14;
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+  background: $c-grey-300;
+  font-size: $fs-14;
+  font-family: "Roboto", "sans-serif" !important;
+  color: $c-black;
+}
+
+.pr-20 {
+  padding-right: 20px!important;
+}
+
+.mt-20 {
+  margin-top: 20px!important;
+}
+
+.mt-10 {
+  margin-top: 10px!important;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
+}
+
+.hidden {
+  overflow: hidden!important;
+}
+
+.highlight {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(13, 133, 254, 0.15)!important;
+}

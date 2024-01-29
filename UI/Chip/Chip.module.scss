@@ -1,0 +1,25 @@
+@import "styles/utils/variables";
+
+.Chip {
+  padding: 7px 12px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.1);
+  color: $c-black-600;
+  font-size: 13px;
+  display: inline-block;
+  cursor: pointer;
+  .Chip__content {
+    display: flex;
+    align-items: center;
+    .Chip__delete {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+    }
+  }
+}
+
+.Chip__active {
+  background: $c-blue;
+  color: #fff;
+}

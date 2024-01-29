@@ -1,0 +1,23 @@
+.ReviewsContent {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  border-right: 1px #E6E6E6 solid;
+  .ReviewsContent__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .ReviewsList {
+    margin-top: 25px;
+    .Review__organization {
+      display: flex;
+      align-items: center;
+      img {
+        object-fit: contain;
+      }
+      .Review__name {
+        margin-left: 5px;
+      }
+    }
+  }
+}

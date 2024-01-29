@@ -1,0 +1,41 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.PollStatistics {
+  max-width: 400px;
+  width: 100%;
+  border-left: 1px $c-grey-100 solid;
+  padding: 30px;
+  .PollStatistics__title {
+    font-size: 18px;
+    color: $c-black-900;
+    font-weight: 500;
+  }
+  .PollStatistics__chart {
+    margin-top: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background: #fff;
+    padding: 20px;
+    .ResultItem {
+      margin-bottom: 7px;
+      @include FlexStyles(center, space-between);
+    }
+  }
+  .PollRatingResults__row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    .PollRatingResults__rating {
+      margin-right: 5px;
+    }
+  }
+}
+
+.PollUsersVotedChart {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto 20px auto;
+}

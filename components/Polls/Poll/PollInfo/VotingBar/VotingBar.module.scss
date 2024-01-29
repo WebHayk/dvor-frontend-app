@@ -1,0 +1,63 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.VotingBar {
+  margin-top: 25px;
+  .VotingBar__question {
+    font-size: 18px;
+    color: $c-black-900;
+    font-weight: 500;
+  }
+  .VotingBar__content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .VotingBar__rate {
+      display: flex;
+      align-items: center;
+    }
+    .VotingBar__comment {
+      margin-top: 10px;
+    }
+    .VotingBar__commentLength {
+      margin-top: 5px;
+      color: $c-black-600;
+      @include FlexStyles(center, flex-end);
+    }
+    .VotingBar__label {
+      font-size: 16px;
+      margin-left: 5px;
+      font-weight: 500;
+    }
+  }
+  .VotingBar__voted {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    .VotingBar__text {
+      margin-right: 15px;
+    }
+  }
+  .VotingBar__ended {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.VotingAnswer {
+  margin-bottom: 10px;
+  .VotingAnswer__content {
+    display: flex;
+    align-items: center;
+    .VotingAnswer__label {
+      color: $c-black-600;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+    .VotingAnswer__active {
+      color: $c-black-900;
+    }
+  }
+  .VotingAnswer__image {
+    margin-top: 10px;
+  }
+}

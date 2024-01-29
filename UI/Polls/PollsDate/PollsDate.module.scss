@@ -1,0 +1,19 @@
+@import "styles/utils/variables";
+
+.PollsDate {
+  display: flex;
+  align-items: center;
+  .PollsDate__item {
+    margin-right: 20px;
+    .PollsDate__value {
+      font-size: 15px;
+      color: $c-black-900;
+    }
+    .PollsDate__label {
+      color: $c-black-600;
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+  }
+}

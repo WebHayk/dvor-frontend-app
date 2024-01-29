@@ -1,0 +1,20 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.PanelHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  .PanelHeader__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @include FlexStyles(center, center);
+    background: $c-blue;
+    margin-right: 15px;
+  }
+  .PanelHeader__title {
+    font-size: 20px;
+    color: $c-black-900;
+  }
+}

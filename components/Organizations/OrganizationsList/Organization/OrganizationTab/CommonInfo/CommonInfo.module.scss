@@ -1,0 +1,33 @@
+@import "styles/utils/variables";
+
+.CommonInfo {
+  padding: 20px;
+  .CommonInfo__row {
+    display: flex;
+    align-items: center;
+  }
+  .CommonInfo__renderer {
+    margin-right: 40px;
+  }
+  .CommonInfo__description {
+    margin: 20px 0;
+  }
+  .CommonInfo__notes {
+    margin-bottom: 20px;
+  }
+  .CommonInfo__moduleTitle {
+    font-weight: 500;
+    font-size: 12px;
+    color: $c-black-600;
+  }
+  .CommonInfo__modules {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+    .CommonInfo__module {
+      margin-right: 5px;
+    }
+  }
+}

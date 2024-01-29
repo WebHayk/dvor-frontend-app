@@ -1,0 +1,55 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.MeterRecordsRow__counter {
+  display: flex;
+  align-items: center;
+  .MeterRecordsRow__counterContent {
+    margin-left: 10px;
+    .MeterRecordsRow__type {
+      font-weight: 500;
+      color: $c-black-900;
+      margin-bottom: 5px;
+    }
+    .MeterRecordsRow__number {
+      color: $c-black-600;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.MeterRecordsRow__label {
+  color: $c-black-900;
+}
+
+.MeterRecordsRow__consumption {
+  display: flex;
+  align-items: center;
+  .MeterRecordsRow__row {
+    display: flex;
+    align-items: center;
+  }
+  .MeterRecordsRow__difference {
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .MeterRecordsRow__grow {
+    color: #EA1000;
+  }
+  .MeterRecordsRow__decreased {
+    color: #34C759;
+  }
+}
+
+.MeterRecordsRow__edit {
+  margin: 0 10px;
+}
+
+.MeterRecordsRow__control {
+  @include FlexStyles(center, flex-end);
+  .MeterRecordsRow__verified {
+    margin-right: 10px;
+  }
+}

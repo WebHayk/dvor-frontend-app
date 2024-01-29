@@ -1,0 +1,10 @@
+@import "styles/utils/variables";
+
+.CommonInfo {
+  margin-top: 20px;
+  .CommonInfo__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: $c-black-900;
+  }
+}

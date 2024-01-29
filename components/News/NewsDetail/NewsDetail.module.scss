@@ -1,0 +1,32 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.NewsDetail {
+  width: 100%;
+  padding: 30px;
+  .NewsDetail__preview {
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+  .NewsDetail__content {
+    margin-top: 15px;
+    .NewsDetail__date {
+      color: $c-black-600;
+    }
+    .NewsDetail__title {
+      font-size: 30px;
+      @include TitleStylesMixin;
+      color: $c-black-900;
+      margin-top: 10px;
+      margin-bottom: 7px;
+    }
+    .NewsDetail__description {
+      line-height: 22px;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+}

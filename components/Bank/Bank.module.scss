@@ -1,0 +1,23 @@
+@import "styles/utils/variables";
+
+.StatementControl {
+  margin-top: 15px;
+  max-width: 430px;
+  width: 100%;
+
+  select {
+    max-width: 100% !important;
+  }
+
+  .StatementControl__item {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    .StatementControl__label {
+      font-size: 13px;
+      color: $c-black-500;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+  }
+}

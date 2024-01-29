@@ -1,0 +1,20 @@
+@import "styles/utils/mixins";
+
+.HousesMapTop {
+  position: relative;
+  padding: 30px;
+  @include FlexBetweenStyles;
+  .HousesMapTop__left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .HousesMapTop__title {
+      @include TitleStylesMixin;
+    }
+    .HousesMapTop__city {
+      margin-left: 30px;
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+}

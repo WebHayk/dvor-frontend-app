@@ -1,0 +1,48 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.AccountControl {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .AccountControl__item {
+    user-select: none;
+    cursor: pointer;
+    @include FlexCenterStyles;
+    height: 100%;
+    border-left: 1px $c-grey-100 solid;
+    padding: 0 12px;
+    border-bottom: 2px solid transparent;
+    .AccountControl__info {
+      margin-left: 10px;
+    }
+    .AccountControl__type {
+      color: $c-black-500;
+      font-weight: 500;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+  }
+
+  .AccountControl__active {
+    background: rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #1F70F3;
+  }
+
+  .AccountControl__last {
+    padding-right: 20px;
+  }
+  .ControlDropdown {
+    z-index: 1050;
+    max-width: 230px;
+    width: 100%;
+    position: absolute;
+    right: 25px;
+    top: 66px;
+    .ControlDropdown__item {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+  }
+}

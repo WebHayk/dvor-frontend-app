@@ -1,0 +1,12 @@
+@import "styles/utils/variables";
+
+.BackButton {
+  display: flex;
+  align-items: center;
+  color: $c-black-600;
+  font-weight: 500;
+  img {
+    transform: rotate(90deg);
+    margin-right: 3px;
+  }
+}

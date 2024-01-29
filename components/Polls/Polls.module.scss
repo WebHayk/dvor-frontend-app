@@ -1,0 +1,12 @@
+@import "styles/utils/mixins";
+
+.Polls {
+  position: relative;
+  @include SectionStylesMixin;
+  .Polls__content {
+    @include FlexStyles(center, space-between);
+  }
+  .Polls__wrapper {
+    margin-top: 30px;
+  }
+}

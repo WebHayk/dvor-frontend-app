@@ -1,0 +1,40 @@
+@import "styles/utils/variables";
+
+.OrganizationWorkersBar {
+  margin-top: 30px;
+  .OrganizationWorkersBar__schedule {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: $c-barley-white;
+  }
+  .OrganizationWorkersBar__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .WorkerItem {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .WorkerItem__right {
+      margin-left: 10px;
+      .WorkerItem__name {
+        color: $c-black-900;
+        font-weight: 500;
+      }
+      .WorkerItem__online {
+        color: $c-green;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+      .WorkerItem__lastSeen {
+        color: $c-black-600;
+        margin-top: 5px;
+        font-size: 13px;
+      }
+    }
+  }
+}

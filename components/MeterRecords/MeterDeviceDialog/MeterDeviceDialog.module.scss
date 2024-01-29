@@ -1,0 +1,13 @@
+.MeterDeviceDialog {
+  .MeterDeviceDialog__type {
+    select {
+      max-width: 100% !important;
+    }
+  }
+  .MeterDeviceDialog__number {
+    margin: 10px 0;
+  }
+  .MeterDeviceDialog__images {
+    margin-top: 25px;
+  }
+}

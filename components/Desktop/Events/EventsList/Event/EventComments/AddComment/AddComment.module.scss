@@ -1,0 +1,27 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.AddComment {
+  @include FlexBetweenStyles;
+  border-top: 1px $c-grey-100 solid;
+  padding: 0px 12px;
+  .AddComment__file {
+    .AddComment__fileButton {
+      cursor: pointer;
+    }
+    input {
+      display: none;
+    }
+  }
+  .AddComment__content {
+    textarea {
+      margin-top: 15px;
+      width: 270px;
+      resize: none;
+      border: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

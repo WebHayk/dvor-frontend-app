@@ -1,0 +1,26 @@
+@import "styles/utils/mixins";
+
+.FormControl {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+
+  .FormControl__content {
+    max-width: 570px;
+    width: 100%;
+
+    .FormControl__row {
+      margin-bottom: 20px;
+      @include FlexStyles(flex-start, space-between);
+      .FormControl__fieldWrapper {
+        max-width: 270px;
+        width: 100%;
+      }
+    }
+
+
+    .FormControl__actions {
+      margin-top: 30px;
+    }
+  }
+}

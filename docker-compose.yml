@@ -1,0 +1,28 @@
+version: "3.3"
+
+services:
+
+  scandvor-frontend:
+    image: "scandvor-frontend:${IMAGE_APP_TAG}"
+    restart: unless-stopped
+    container_name: "scandvor-frontend"
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://185.185.40.136:3100/loki/api/v1/push"
+        loki-external-labels: scandvor_frontend=dev
+#    ports:
+#      - "3000:80"
+    labels:
+      - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=80"
+      - "traefik.enable=true"
+      - "traefik.docker.network=${APP_NETWORK}"
+      - "traefik.http.routers.${APP_NAME}.rule=Host(`${APP_DOMAIN}`)"
+      - "traefik.http.routers.${APP_NAME}.entrypoints=web,websecure"
+      - "traefik.http.routers.${APP_NAME}.tls.certresolver=myresolver"
+      - "traefik.http.routers.${APP_NAME}.middlewares=traefik-compress"
+
+networks:
+  default:
+    external: true
+    name: ${APP_NETWORK}

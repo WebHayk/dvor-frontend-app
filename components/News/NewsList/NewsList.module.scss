@@ -1,0 +1,23 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.NewsList {
+  min-width: 300px;
+  max-width: 300px;
+  width: 100%;
+  border-right: 1px $c-grey-100 solid;
+  border-left: 1px $c-grey-100 solid;
+  border-bottom: 1px $c-grey-100 solid;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .NewsList__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.NewsList__empty {
+  margin-top: 15px;
+}

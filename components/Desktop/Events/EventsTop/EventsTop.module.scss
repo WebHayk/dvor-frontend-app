@@ -1,0 +1,20 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Events__header {
+  .Events__top {
+    @include FlexBetweenStyles;
+    .Events__title {
+      @include TitleStylesMixin;
+    }
+  }
+  .EventsTab {
+    width: 100%;
+    @include FlexBetweenStyles;
+    margin-top: 20px;
+    .EventsTab__list {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

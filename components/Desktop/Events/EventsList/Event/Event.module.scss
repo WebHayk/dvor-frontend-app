@@ -1,0 +1,72 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Event {
+  background: #fff;
+  box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.1);
+
+  .Event__top {
+    padding: 12px;
+    @include FlexBetweenStyles;
+
+    .Event__left {
+      @include FlexStartStyles;
+
+      .Event__profile {
+        width: 36px;
+        height: 36px;
+        background: #e2e2e2;
+        border-radius: 50%;
+      }
+
+      .Event__info {
+        margin-left: 10px;
+
+        .Event__row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4px;
+
+          .Event__name {
+            margin-right: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $c-black-400;
+          }
+
+          .Event__date {
+            font-weight: 500;
+            line-height: 16px;
+            color: $c-black-600;
+          }
+
+          .Event__address {
+            position: relative;
+            color: rgba(19, 18, 16, 0.86);
+            margin-right: 20px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              border-radius: 50%;
+              width: 5px;
+              height: 5px;
+              left: 107%;
+              top: calc(50% - 2px);
+              background: grey;
+            }
+          }
+
+          .Event__range {
+            color: rgba(19, 18, 16, 0.86);
+          }
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

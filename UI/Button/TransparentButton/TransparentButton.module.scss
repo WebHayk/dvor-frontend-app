@@ -1,0 +1,11 @@
+@import "styles/utils/variables";
+
+.TransparentButton {
+  display: flex;
+  align-items: center;
+  .TransparentButton__action {
+    color: $c-blue;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+}

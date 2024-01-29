@@ -1,0 +1,46 @@
+@import "styles/utils/mixins";
+
+.ChatControl {
+  background: #fff;
+  height: inherit;
+  .ChatControl__content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    .ChatControl__left {
+      display: flex;
+      align-items: center;
+      .ChatControl__picker {
+        margin-left: 5px;
+      }
+      .ChatControl__pickerWrapper {
+        position: relative;
+      }
+    }
+    .ChatControl__upload {
+      margin-right: 15px;
+    }
+    .ChatControl__control {
+      margin-left: 10px;
+      max-width: 100%;
+      width: 100%;
+      .ChatControl__area {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        resize: none;
+        max-height: 200px;
+        font-size: 16px;
+        white-space: pre-wrap;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+    .ChatControl__send {
+      margin-left: 15px;
+    }
+  }
+}

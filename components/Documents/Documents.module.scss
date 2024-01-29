@@ -1,0 +1,20 @@
+@import "styles/utils/mixins";
+
+.Documents {
+  @include SectionStylesMixin;
+}
+
+.EditDocumentDialog {
+  width: 100%;
+  select {
+    max-width: 100%!important;
+  }
+}
+
+.DocumentsRow__row {
+  width: 100px;
+}
+
+.ShowDocumentDialog__viewer {
+  height: 75vh;
+}

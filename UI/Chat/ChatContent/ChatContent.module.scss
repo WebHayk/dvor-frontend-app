@@ -1,0 +1,16 @@
+@import "styles/utils/mixins";
+
+.ChatContent {
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  overflow-y: auto;
+  .ChatContent__more {
+    @include FlexStyles(center, center);
+    margin-bottom: 30px;
+  }
+}
+
+.None {
+  display: none;
+}

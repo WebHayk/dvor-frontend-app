@@ -1,0 +1,36 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.TasksFilterDialog {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  .TasksFilterDialog__content {
+    margin-top: 10px;
+    .TasksFilterDialog__apartment {
+        select {
+          max-width: 100% !important;
+        }
+    }
+    .TasksFilterDialog__row {
+      margin-top: 10px;
+      select {
+        max-width: 100%;
+      }
+    }
+    .TasksFilterDialog__date {
+      margin-top: 20px;
+      .TasksFilterDialog__label {
+        margin-bottom: 5px;
+      }
+    }
+    .TasksFilterDialog__label {
+      font-size: 13px;
+      color: $c-black-500;
+    }
+  }
+}
+
+.TasksFilterDialog__chip {
+  margin-bottom: 7px;
+}

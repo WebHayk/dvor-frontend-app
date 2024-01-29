@@ -1,0 +1,15 @@
+@import "styles/utils/variables";
+
+.ContactsInfo__info {
+  margin: 15px 0;
+  .ContactsInfo__row {
+    display: flex;
+    margin-bottom: 7px;
+    align-items: center;
+    .ContactsInfo__label {
+      color: $c-black-600;
+      font-size: 15px;
+      margin-left: 7px;
+    }
+  }
+}

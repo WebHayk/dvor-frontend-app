@@ -1,0 +1,56 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.FilterControl {
+  width: 100%;
+  border: 1px $c-grey-100 solid;
+  background: $c-grey-400;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  .FilterControl__content {
+    padding: 20px;
+  }
+  .FilterControl__top {
+    @include FlexBetweenStyles;
+    .FilterControl__title {
+      font-weight: 500;
+      font-size: 16px;
+      color: $c-black-900;
+    }
+  }
+  .FilterControl__all {
+    margin-top: 15px;
+    @include FlexBetweenStyles;
+    .FilterControl__label {
+      color: $c-black-600;
+      font-size: 15px;
+    }
+  }
+  .FilterControl__list {
+    padding: 10px 20px;
+    background: #fff;
+    .ControlItem {
+      @include FlexBetweenStyles;
+      padding: 10px 0px;
+      border-bottom: 1px #eaeaea solid;
+      .ControlItem__left {
+        display: flex;
+        align-items: center;
+        .ControlItem__text {
+          font-weight: 500;
+          margin-left: 10px;
+          color: #1F1C4E;
+        }
+      }
+      &:first-child {
+        padding-top: 0px;
+      }
+    }
+  }
+  .FilterControl__submit {
+    padding: 10px 20px;
+    button {
+      width: 100%;
+    }
+  }
+}

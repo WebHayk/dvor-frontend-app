@@ -1,0 +1,12 @@
+.Pagination__control {
+  display: flex;
+  align-items: center;
+
+  .Pagination__prev {
+    margin-right: 15px;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}

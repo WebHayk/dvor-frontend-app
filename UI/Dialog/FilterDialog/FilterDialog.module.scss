@@ -1,0 +1,25 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.FilterDialog {
+  z-index: 10;
+  min-width: 370px;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 20px;
+  .FilterDialog__top {
+    margin-bottom: 15px;
+    @include FlexStyles(center, space-between);
+    .FilterDialog__title {
+      color: $c-black-900;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .FilterDialog__footer {
+    margin-top: 20px;
+  }
+}

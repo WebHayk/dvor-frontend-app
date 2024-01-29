@@ -1,0 +1,39 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.DocumentsHeader {
+  @include FlexStyles(center, space-between);
+  .DocumentsHeader__title {
+    @include TitleStylesMixin;
+  }
+  .AddDocumentDialog {
+    .AddDocumentDialog__content {
+      .AddDocumentDialog__file {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      select {
+        max-width: 100%;
+      }
+      .AddDocumentDialog__upload {
+        background: $c-blue;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 12px 24px;
+      }
+      .AddDocumentDialog__result {
+        color: $c-black-600;
+        width: 100%;
+        margin-left: 20px;
+        border-bottom: 1px  rgba(0, 0, 0, 0.26) solid;
+        padding-bottom: 5px;
+      }
+      .AddDocumentDialog__row {
+        margin: 15px 0;
+      }
+    }
+
+  }
+}

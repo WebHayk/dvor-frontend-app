@@ -1,0 +1,15 @@
+@import "styles/utils/mixins";
+
+.MeterRecordsHeader {
+  @include FlexStyles(center, space-between);
+  .MeterRecordsHeader__title {
+    @include TitleStylesMixin;
+  }
+  .MeterRecordsHeader__right {
+    display: flex;
+    align-items: center;
+    .MeterRecordsHeader__history {
+      margin: 0 20px;
+    }
+  }
+}

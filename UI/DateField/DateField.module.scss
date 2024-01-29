@@ -1,0 +1,18 @@
+@import "styles/utils/variables";
+
+.DateField {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px $c-grey-100 solid;
+  background: transparent;
+  color: $c-black-900;
+  padding-bottom: 5px;
+  appearance: none!important;
+  -webkit-appearance: none!important;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  &:focus {
+    outline: 0;
+  }
+}

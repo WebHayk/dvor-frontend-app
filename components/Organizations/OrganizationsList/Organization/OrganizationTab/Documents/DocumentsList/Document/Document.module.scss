@@ -1,0 +1,14 @@
+@import "styles/utils/variables";
+
+.Document {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  img {
+    margin-right: 10px;
+  }
+  &:hover {
+    background: $c-grey-200;
+  }
+}

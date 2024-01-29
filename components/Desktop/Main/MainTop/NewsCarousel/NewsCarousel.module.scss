@@ -1,0 +1,13 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.NewsCarousel__item {
+  height: 200px;
+}
+
+.NewsCarousel {
+  background: $c-grey-300;
+  .NewsCarousel__wrapper {
+    max-width: 800px;
+  }
+}

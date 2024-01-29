@@ -1,0 +1,44 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.ReplyMessageBar {
+  padding-right: 30px;
+  overflow: hidden!important;
+  @include FlexStyles(center, space-between);
+  height: 50px;
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__row {
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .ReplyMessageBar__content {
+      max-width: 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    img {
+      object-fit: cover;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 2px;
+      height: 40px;
+      background: $c-grey-100;
+    }
+  }
+  &__cancel {
+    position: absolute;
+    padding-left: 20px;
+    background: linear-gradient(270deg, #FFFFFF 70%, rgba(255, 255, 255, 0.4) 100%);
+    right: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.VerificationControl__fieldTitle {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.VerificationControl__row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  .VerificationControl__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    .VerificationControl__label {
+      font-size: 15px;
+      margin-left: 5px;
+    }
+  }
+}

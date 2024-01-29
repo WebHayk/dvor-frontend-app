@@ -1,0 +1,52 @@
+@import "styles/utils/mixins";
+
+.FormControl {
+  width: 100%;
+
+  .FormControl__content {
+    max-width: 570px;
+    margin-top: 20px;
+    width: 100%;
+
+    .FormControl__street {
+      margin: 20px 0px;
+    }
+
+    .FormControl__fieldWrapper {
+      width: 100%;
+      max-width: 270px;
+    }
+
+    .FormControl__entity {
+      @include FlexBetweenStyles;
+    }
+
+    .FormControl__building {
+      @include FlexBetweenStyles;
+
+      .FormControl__buildingItem {
+        max-width: 170px;
+        width: 100%;
+      }
+    }
+
+    .FormControl__info {
+      @include FlexBetweenStyles;
+      margin: 20px 0px;
+    }
+
+    .FormControl__files {
+      margin: 25px 0px 20px 0px;
+    }
+
+    .FormControl__actions {
+      display: flex;
+      align-items: center;
+      button {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.UserView {
+ .UserView__content {
+   display: flex;
+   align-items: center;
+   .UserView__right {
+     margin-left: 12px;
+     .UserView__type {
+       color: $c-blue;
+       font-size: 13px;
+       font-weight: 500;
+       margin-top: 3px;
+       span {
+         text-decoration: underline;
+         cursor: pointer;
+         color: $c-black-500;
+         margin-left: 5px;
+       }
+     }
+   }
+   .UserView__status {
+     font-size: 13px;
+     margin-top: 5px;
+     color: $c-black-600;
+     .UserView__online {
+       color: $c-green!important;
+     }
+   }
+ }
+}

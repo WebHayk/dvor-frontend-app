@@ -1,0 +1,18 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.FilesUpload {
+  margin-top: 5px;
+
+  .FilesUpload__title {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .FilesUpload__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

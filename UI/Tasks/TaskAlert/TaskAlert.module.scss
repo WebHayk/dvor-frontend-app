@@ -1,0 +1,81 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.TaskAlert {
+  width: 100%;
+  min-height: 80px;
+  @include FlexStyles(center, space-between);
+  padding: 0 30px;
+  .TaskAlert__left {
+    .TaskAlert__title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .TaskAlert__date {
+      font-size: 15px;
+      color: #fff;
+      margin-top: 5px;
+    }
+  }
+  .TaskAlert__right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .TaskAlert__column {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-right: 40px;
+      .TaskAlert__label {
+        color: rgba(255,255,255,0.8);
+        font-size: 13px;
+        margin-bottom: 3px;
+      }
+      .TaskAlert__value {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      select {
+        padding-right: 20px;
+        border-color: transparent!important;
+        color: #fff;
+        background-image: url("/images/arrow-white-icon.svg");
+        option {
+          color: #000!important;
+        }
+      }
+    }
+    .TaskAlert__status {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.TaskAlert__closed {
+  background: $c-green!important;
+}
+
+.TaskAlert__moderation {
+  background: $c-orange;
+}
+
+.TaskAlert__new {
+  background: $c-blue;
+}
+
+.TaskAlert__canceled {
+  background: $c-red;
+}
+
+.TaskAlert__postponed {
+  background: $c-black-600;
+}

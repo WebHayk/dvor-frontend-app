@@ -1,0 +1,16 @@
+.Main {
+  width: 100%;
+  margin-right: 20px;
+  .Main__top {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .Main__bottom {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+}

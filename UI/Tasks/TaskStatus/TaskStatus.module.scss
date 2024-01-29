@@ -1,0 +1,44 @@
+@import "styles/utils/variables";
+
+.TaskStatus {
+  color: $c-black-900;
+  font-weight: 500;
+}
+
+.TaskStatus__closed {
+  color: #34C759;
+}
+
+.TaskStatus__canceled {
+  color: $c-red;
+}
+
+.TaskStatus__postponed {
+  color: $c-black-600;
+}
+
+.TaskStatus__open {
+  color: #FF9500;
+}
+
+.TaskStatus__new {
+  color: $c-blue;
+}
+
+.TaskStatus__urgently {
+  position: relative;
+  font-weight: 500;
+  color: $c-red;
+  margin-left: 16px;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: -8px;
+  }
+}

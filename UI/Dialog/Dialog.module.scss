@@ -1,0 +1,49 @@
+@import "styles/utils/mixins";
+
+.Dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  z-index: 99999;
+  .Dialog__content {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    max-width: 630px;
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .Dialog__header {
+    margin-bottom: 20px;
+    @include FlexBetweenStyles;
+    .Dialog__title {
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+  .Dialog__footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .Dialog__cancel {
+      margin-right: 20px;
+    }
+  }
+}
+
+.Dialog__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(45, 45, 45, 0.3);
+  z-index: 3500;
+}

@@ -1,0 +1,20 @@
+@import "styles/utils/mixins";
+
+.HousesMap {
+  overflow: hidden;
+  border: 1px #ECECEC solid;
+  background: #fff;
+  border-radius: 4px;
+  .HousesMapTab {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .HousesMapTab__wrapper {
+    margin: 30px;
+  }
+  .HousesMap__pagination {
+    @include FlexStyles(center, flex-end);
+    margin-top: 20px;
+  }
+}

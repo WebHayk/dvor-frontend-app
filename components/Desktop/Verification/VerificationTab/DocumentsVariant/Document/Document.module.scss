@@ -1,0 +1,30 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Document {
+  width: 100%;
+  padding: 25px 10px;
+  background: #fff;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  @include FlexCenterStyles;
+  flex-direction: column;
+  text-align: center;
+  .Document__title {
+    color: $c-black-900;
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  .Document__description {
+    color: $c-black-600;
+  }
+  .Document__icon {
+    margin: 25px 0;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+}

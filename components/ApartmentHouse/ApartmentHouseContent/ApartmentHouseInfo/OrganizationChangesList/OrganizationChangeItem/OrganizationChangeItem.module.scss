@@ -1,0 +1,21 @@
+@import "styles/utils/variables";
+
+.OrganizationChangeItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  img {
+    object-fit: contain;
+  }
+  &__right {
+    margin-left: 10px;
+    .OrganizationChangeItem__name {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .OrganizationChangeItem__date {
+      margin-top: 5px;
+      color: $c-black-600;
+    }
+  }
+}

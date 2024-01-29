@@ -1,0 +1,57 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.CreateEventDialog {
+  .CreateEventDialog__top {
+    display: flex;
+    align-items: flex-start;
+
+    .CreateEventDialog__profile {
+      width: 36px;
+      height: 36px;
+      background: #e2e2e2;
+      border-radius: 50%;
+    }
+
+    .CreateEventDialog__left {
+      margin-left: 10px;
+
+      .CreateEventDialog__name {
+        font-weight: 500;
+        font-size: 15px;
+        color: $c-black-900;
+      }
+
+      .CreateEventDialog__address {
+        margin-top: 3px;
+        font-weight: 500;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+
+  .CreateEventDialog__content {
+    margin-top: 20px;
+    .CreateEventDialog__text {
+      width: 100%;
+      font-size: 20px;
+      line-height: 16px;
+      height: 200px;
+      border: 0;
+      resize: none;
+      ::-webkit-input-placeholder {
+        color: $c-black-500;
+      }
+      :-ms-input-placeholder {
+        color: $c-black-500;
+      }
+      ::placeholder {
+        color: $c-black-500;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

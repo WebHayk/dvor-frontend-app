@@ -1,0 +1,13 @@
+.PollImages {
+  margin-top: 25px;
+  .PollImages__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .PollImages__list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+}

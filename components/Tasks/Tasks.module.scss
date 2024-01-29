@@ -1,0 +1,6 @@
+@import "styles/utils/mixins";
+
+.Tasks {
+  @include SectionStylesMixin;
+  position: relative;
+}

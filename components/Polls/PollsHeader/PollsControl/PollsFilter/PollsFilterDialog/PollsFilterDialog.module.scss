@@ -1,0 +1,23 @@
+@import "styles/utils/variables";
+
+.PollsFilterDialog {
+  position: absolute;
+  right: 30px;
+  top: 70px;
+  .PollsFilterDialog__label {
+    color: $c-black-500;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .PollsFilterDialog__type {
+    width: 100%;
+    margin-top: 10px;
+    select {
+      max-width: 100% !important;
+    }
+  }
+  .PollsFilterDialog__date {
+    margin: 20px 0;
+  }
+}

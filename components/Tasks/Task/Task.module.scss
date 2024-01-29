@@ -1,0 +1,34 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.TaskComponent {
+  border: 1px solid #ECECEC;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+  .TaskComponent__tab {
+    max-width: 330px;
+    width: 100%;
+    background: #fff;
+    border: 1px $c-grey-100 solid;
+    border-radius: 5px;
+  }
+  .TaskComponent__content {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .TaskComponent__section {
+    width: 100%;
+    margin-left: 20px;
+    @include SectionStylesMixin;
+  }
+  .TaskComponent__chat {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+
+.TaskTab__rating {
+  padding: 20px;
+}

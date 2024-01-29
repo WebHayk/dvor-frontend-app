@@ -1,0 +1,11 @@
+.Rating__body {
+  display: flex;
+  align-items: center;
+  .Rating__star {
+    margin-right: 2px;
+    cursor: default;
+  }
+  .Rating__clickable {
+    cursor: pointer!important;
+  }
+}

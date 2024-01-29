@@ -1,0 +1,102 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.Documents {
+  margin-top: 30px;
+  position: relative;
+
+  .Documents__content {
+
+    .Documents__condition {
+      margin-bottom: 35px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+
+      .Documents__left {
+        img {
+          width: 65px;
+          height: 65px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+
+      .Documents__right {
+        margin-left: 20px;
+
+        .Documents__title {
+          color: $c-black-900;
+          font-size: 18px;
+        }
+
+        .Documents__description {
+          color: $c-black-600;
+          line-height: 19px;
+          margin-top: 5px;
+        }
+
+        .Documents__action {
+          margin-top: 10px;
+        }
+
+        .Documents__list {
+
+          .Documents__listItem {
+            position: relative;
+            margin-left: 10px;
+            color: $c-black-600;
+            margin-top: 10px;
+
+            span {
+              line-height: 19px;
+              margin-left: 5px;
+            }
+
+            &::before {
+              content: "\25CF";
+              position: absolute;
+              color: $c-blue;
+              left: -10px;
+            }
+          }
+
+        }
+
+        .Documents__label {
+          display: block;
+          color: $c-black-600;
+          line-height: 19px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .Documents__files {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+  }
+}
+
+.Documents__button {
+  display: inline-block;
+  background: $c-blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Documents__submit {
+  margin-top: 20px;
+  flex-direction: column;
+  @include FlexStyles(center, center);
+  width: 100%;
+  .Documents__error {
+    margin-bottom: 10px;
+  }
+}

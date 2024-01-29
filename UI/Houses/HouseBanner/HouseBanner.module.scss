@@ -1,0 +1,89 @@
+@import "styles/utils/variables";
+
+.HouseBanner {
+  width: 100%;
+  max-height: 225px;
+  height: 100%;
+  background: $c-black-500;
+  border-radius: 4px 4px 0 0;
+
+  .HouseBanner__content {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+
+    .HouseBanner__profile {
+      object-fit: contain;
+    }
+
+    .HouseBanner__right {
+      margin-left: 25px;
+      .HouseBanner__organization {
+        display: flex;
+        align-items: center;
+
+        .HouseBanner__type {
+          margin-right: 10px;
+          background: #fff;
+          border-radius: 5px;
+          padding: 2px 6px;
+          font-weight: 700;
+          color: #34C759;
+        }
+
+        .HouseBanner__organizationName {
+          font-weight: 500;
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+
+      .HouseBanner__info {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .HouseBanner__address {
+          font-weight: 500;
+          font-size: 20px;
+          color: #fff;
+          margin-right: 15px;
+        }
+      }
+
+      .HouseBanner__rating {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        .HouseBanner__ratingInfo {
+          display: flex;
+          align-items: center;
+          .HouseBanner__ratingLabel {
+            color: #fff;
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 5px;
+          }
+        }
+
+        .HouseBanner__reviews {
+          display: block;
+          font-size: 13px;
+          margin-left: 7px;
+          color: #fff;
+        }
+      }
+
+      .HouseBanner__bottom {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        button {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "styles/utils/variables";
+
+.Event__content {
+  .Event__text {
+    padding: 0px 12px;
+    color: $c-black-600;
+    line-height: 19px;
+    margin-bottom: 12px;
+  }
+}

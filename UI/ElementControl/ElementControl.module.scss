@@ -1,0 +1,9 @@
+.ElementControl {
+  display: flex;
+  align-items: center;
+  button {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}

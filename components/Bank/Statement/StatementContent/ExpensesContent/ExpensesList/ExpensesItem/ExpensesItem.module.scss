@@ -1,0 +1,22 @@
+@import "styles/utils/variables";
+
+.ExpensesItem {
+  display: flex;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+  .ExpensesItem__right {
+    margin-left: 10px;
+    .ExpensesItem__type {
+      color: $c-black-600;
+      margin-bottom: 5px;
+    }
+    .ExpensesItem__amount {
+      font-size: 16px;
+    }
+  }
+  &:hover {
+    background: $c-grey-200;
+  }
+}

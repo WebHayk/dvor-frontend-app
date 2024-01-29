@@ -1,0 +1,38 @@
+@import "styles/utils/variables";
+
+.Sidebar {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border-right: 1px solid $c-grey-100;
+  border-bottom: 1px solid $c-grey-100;
+  .Sidebar__top {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    .Sidebar__title {
+      font-weight: 700;
+      letter-spacing: 0.201em;
+      color: $c-purple-400;
+    }
+    .Sidebar__description {
+      font-size: 13px;
+      letter-spacing: 0.001em;
+      margin-top: 3px;
+    }
+    div {
+      margin-left: 15px;
+      white-space: nowrap!important;
+    }
+  }
+}
+
+.Sidebar__hideContent {
+  display: none;
+}
+
+.Sidebar__hide {
+  width: 72px;
+}

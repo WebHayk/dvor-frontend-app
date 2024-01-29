@@ -1,0 +1,13 @@
+.ExpensesChart {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.ExpensesContent {
+  display: flex;
+  align-items: center;
+  padding: 50px 0 50px 30px;
+  .ExpensesContent__right {
+    margin-left: 40px;
+  }
+}

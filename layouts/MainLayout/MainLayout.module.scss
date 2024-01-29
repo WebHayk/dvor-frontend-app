@@ -1,0 +1,11 @@
+.MainLayout {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  .MainLayout__content {
+    width: 100%;
+    .MainLayout__info {
+      padding: 30px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.Avatar {
+  max-width: 180px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .Avatar__image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .Avatar__edit {
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    span {
+      color: $c-blue;
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "styles/utils/mixins";
+
+.MoreGallery {
+  width: 100%;
+
+  .MoreGallery__content {
+    display: grid;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: stretch;
+    align-items: stretch;
+
+    img {
+      object-fit: cover;
+    }
+
+    .MoreGallery__control {
+      cursor: pointer;
+      position: relative;
+      @include FlexCenterStyles;
+      background-position: center;
+      span {
+        user-select: none;
+        z-index: 5;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    .MoreGallery__backdrop {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: black;
+      opacity: 0.5;
+    }
+  }
+
+  .MoreGallery__one {
+     grid-template-columns: 100%;
+     grid-template-rows: 180px;
+  }
+
+  .MoreGallery__two {
+    grid-template-columns: 49.9% 49.9%;
+    grid-template-rows: 130px;
+  }
+
+  .MoreGallery__three {
+    grid-template-columns: 33.25% 33.25% 33.25%;
+    grid-template-rows: 120px;
+  }
+
+  .MoreGallery__another {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 140px 140px;
+  }
+}

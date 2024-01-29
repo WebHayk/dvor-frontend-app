@@ -1,0 +1,17 @@
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+
+.ChatHeader {
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: 1px $c-grey-100 solid;
+  @include FlexStyles(center, space-between);
+  .ChatHeader__right {
+    z-index: 50;
+    position: relative;
+    .ChatHeader__dropdown {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.Section {
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
+  .Section__title {
+    @include TitleStylesMixin;
+  }
+  .Section__description {
+    color: $c-black-600;
+    margin-top: 7px;
+  }
+}

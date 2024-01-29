@@ -1,0 +1,35 @@
+@import "styles/utils/mixins";
+@import "styles/utils/variables";
+
+.RecordsHistoryHeader {
+  position: relative;
+  @include FlexStyles(center, space-between);
+  margin-bottom: 30px;
+  .RecordsHistoryHeader__left {
+    display: flex;
+    align-items: center;
+    .RecordsHistoryHeader__back {
+      transform: rotate(90deg);
+    }
+    .RecordsHistoryHeader__title {
+      @include TitleStylesMixin;
+      margin-left: 15px;
+    }
+  }
+  .HistoryFilterDialog {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    .HistoryFilterDialog__row {
+      .HistoryFilterDialog__label {
+        color: $c-black-500;
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+      .HistoryFilterDialog__chip {
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

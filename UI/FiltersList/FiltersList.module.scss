@@ -1,0 +1,24 @@
+@import "styles/utils/variables";
+
+.FiltersList {
+  display: flex;
+  align-items: center;
+  .FiltersList__label {
+    color: $c-black-900;
+    margin-right: 10px;
+  }
+  .FiltersList__list {
+    display: flex;
+    align-items: center;
+  }
+  .FiltersList__remove {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    color: $c-black-600;
+    font-weight: 500;
+    img {
+      margin-right: 3px;
+    }
+  }
+}
